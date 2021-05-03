@@ -15,5 +15,11 @@ function logWhisper(string) {
 }
 
 function sayHiToGrandma(string) {
-  return string.replace("Grandma", "too") ? string.replace("HELLO", "YES INDEED!") : string.replace("hello", "I can't hear you");
+  if (string === isUpperCase(string)) {
+    return true;
+  }
+}
+
+function isUpperCase(str) {
+  return (/^[^a-z]*$/).test(str);
 }
